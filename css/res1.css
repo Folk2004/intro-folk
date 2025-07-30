@@ -1,0 +1,53 @@
+*{
+
+box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    margin: 0;
+}
+.header{
+    padding: 60px;
+    text-align:clear;
+    background: rgb(51, 88, 255);
+    color: rgb(0, 0, 0);
+}
+.navbar a {
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    text-decoration: nane;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: rgb(73, 164, 243);
+    color: black;
+}
+.row {
+    display:flex;
+    flex-wrap:wrap;
+}
+.side{
+    flex:30%;
+    background-color: rgb(62, 95, 238);
+    padding: 20px;
+}
+.main {
+    flex:70%;
+    background-color:rgb(47, 158, 223);
+    padding: 20px;
+}
+.fakeimg {
+    background-color: rgb(0, 60, 255);
+    width: 100%;
+    padding: 20px;
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: white;
+}
+@media screen and (max-width:700px){
+    .row, .nabar{
+        flex-direction: column;
+    }
+}
